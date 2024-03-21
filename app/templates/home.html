@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <img src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Example Image">
+    <h1>Get your errands done without leaving home.</h1>
+    <p>Connect with reliable Errand Masters in your area.</p>
+    <div class="cta-buttons">
+        <a href="#hire" class="btn">Engage an Errand Pro</a>
+    </div>
+</section>
+
+<section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Post an Errand</li>
+        <li>Choose an Errand Master</li>
+        <li>Errand is Completed!</li>
+    </ol>
+</section>
+
+<section class="client-testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+        <p>"TaskMate makes it so easy to get help with my to-do list."</p>
+    </div>
+    <div class="testimonial">
+        <p>"The errand masters go above and beyond. Highly recommend!"</p>
+    </div>
+</section>
+
+<section id="for-clients" class="for-clients">
+    <h2>For Clients</h2>
+    <ul>
+        <li>Post any errand, big or small</li>
+        <li>Choose your preferred Errand Master</li>
+        <li>Pay securely through the app</li>
+        <li>Track progress in real-time</li>
+    </ul>
+</section>
+
+<section id="for-errand-masters" class="for-errand-masters">
+    <h2>For Errand Masters</h2>
+    <ul>
+        <li>Set your own hours and rates</li>
+        <li>Select only jobs you want</li>
+        <li>Get paid quickly via direct deposit</li>
+        <li>Build a client base and earn tips</li>
+    </ul>
+</section>
+
+<section id="about" class="about">
+    <h2>About TaskMate</h2>
+    <p>Our mission is to...</p>
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}User Tasks{% endblock %}
+
+{% block content %}
+<h1>User Tasks</h1>
+
+<ul id="tasks-list">
+    <!-- Tasks will be dynamically added here -->
+</ul>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
