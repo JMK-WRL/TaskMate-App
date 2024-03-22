@@ -9,27 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>TaskMate</h1>
-            <nav>
+    <section class="header">
+        <nav class="nav-bar">
+            <a href="{{ url_for('home')}}">TaskMate</a>
+            <div class="nav-links"> 
                 <ul>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+
+        </nav>
+    </section>
+   
 
     {% block content %}
+    
     {% endblock %}
 
+<!--------------------------------- commenting out
     <footer>
-        <div class="container">
-            <p>&copy; 2024 TaskMate. All rights reserved.</p>
-        </div>
     </footer>
+    ---------------------------------------------------------------->
 </body>
 
 </html>
