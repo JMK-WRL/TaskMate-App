@@ -2,32 +2,46 @@
 
 {% block content %}
 <section class="hero">
-    <img src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Example Image">
-    <h1>Get your errands done without leaving home.</h1>
-    <p>Connect with reliable Errand Masters in your area.</p>
-    <div class="cta-buttons">
+    <div class="row">
+        <h1>Get Your Errands done Without Leaving Home</h1>
+        <p>Connect with reliable Errand Masters in your Area</p>
         <a href="#hire" class="btn">Engage an Errand Pro</a>
     </div>
+    <div class="column">
+        <img src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Example Image">
 </section>
+
+
+
 
 <section id="how-it-works" class="how-it-works">
     <h2>How It Works</h2>
-    <ol>
-        <li>Post an Errand</li>
-        <li>Choose an Errand Master</li>
-        <li>Errand is Completed!</li>
-    </ol>
+    <div class="row">
+        <div class="progress-col">
+            <img src="post.jpg" alt="Post Image">
+            <h2>Post Errand</h2>
+        </div>
+        <div class="progress-col">
+            <img src="choose.jpg" alt="Choose Image">
+            <h2>Choose Errand Master</h2>
+        </div>
+        <div class="progress-col">
+            <img src="make.jpg" alt="Make Image">
+            <h2>Make Secure Payment</h2>
+        </div>
+        <div class="progress-col">
+            <img src="track.jpg" alt="Track Image">
+            <h2>Track Progress In Real-Time</h2>
+        </div>
+        <div class="progress-col">
+            <img src="errand.jpg" alt="Errand Image">
+            <h2>Errand Completed</h2>
+        </div>
+    </div>
+
 </section>
 
-<section class="client-testimonials">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-        <p>"TaskMate makes it so easy to get help with my to-do list."</p>
-    </div>
-    <div class="testimonial">
-        <p>"The errand masters go above and beyond. Highly recommend!"</p>
-    </div>
-</section>
+
 
 <section id="for-clients" class="for-clients">
     <h2>For Clients</h2>
@@ -47,6 +61,16 @@
         <li>Get paid quickly via direct deposit</li>
         <li>Build a client base and earn tips</li>
     </ul>
+</section>
+
+<section class="client-testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+        <p>"TaskMate makes it so easy to get help with my to-do list."</p>
+    </div>
+    <div class="testimonial">
+        <p>"The errand masters go above and beyond. Highly recommend!"</p>
+    </div>
 </section>
 
 <section id="about" class="about">
