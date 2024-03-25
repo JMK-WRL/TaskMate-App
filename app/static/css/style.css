@@ -45,13 +45,55 @@ body {
 }
 
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.hero-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.hero-col img {
+    width: 100%;
+}
+
+.hero-col h1 {
+    padding-top: 0;
+}
+
+.hero-col p {
+    padding: 15px 0 25px;
+}
+
+.btn {
+    border: 1px solid #976057;
+    background: transparent;
+    color: #976057;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #976057;
+}
+
 img {
     width: 100%;
     /* Make the image responsive */
     max-width: 500px;
     /* Set a maximum width for the image */
     height: auto;
-    /* Maintain aspect ratio */
+    /* Maintain aspect ratio */eb
     display: block;
     /* Prevent inline elements from affecting the image */
     margin: 0 auto;
@@ -78,9 +120,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px 0;
+.hero-col {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-col img {
+    width: 100%;
 }
 
 .hero h1 {
